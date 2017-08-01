@@ -1,6 +1,6 @@
 {
   "name": "lines-async-iterator",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "⬅ 🤜 Lazy, line-by-line, file read async iterator for node.js",
   "main": "lib/lines.js",
   "typings": "lib/lines.d.ts",
