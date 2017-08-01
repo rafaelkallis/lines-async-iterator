@@ -5,5 +5,6 @@ before_deploy:
   yarn install
 deploy:
   provider: npm
+  skip_cleanup: true
   email: rk@rafaelkallis.com
   api_key: $NPM_AUTH_TOKEN
