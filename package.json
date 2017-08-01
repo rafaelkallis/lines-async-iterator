@@ -1,16 +1,16 @@
 {
   "name": "lines-async-iterator",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "⬅ 🤜 Lazy, line-by-line, file read async iterator for node.js",
   "main": "lib/lines.js",
   "typings": "lib/lines.d.ts",
   "scripts": {
-    "build": "babel src --out-dir lib --ignore spec.js --copy-files",
+    "build": "./node_modules/.bin/babel src --out-dir lib --ignore spec.js --copy-files",
     "test": "node --harmony-async-iteration ./node_modules/.bin/jest -- --forceExit --env=node src/lines.spec.js",
     "posttest": "npm run lint",
     "lint": "eslint src/ --fix",
     "precommit": "npm test",
-    "prepare": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
