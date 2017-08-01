@@ -5,7 +5,7 @@
   "main": "lib/lines.js",
   "typings": "lib/lines.d.ts",
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublishOnly": "npm run build",
     "build": "babel src --out-dir lib --ignore spec.js --copy-files",
     "test": "node --harmony-async-iteration ./node_modules/.bin/jest -- --forceExit --env=node src/lines.spec.js",
     "lint": "eslint src/",
