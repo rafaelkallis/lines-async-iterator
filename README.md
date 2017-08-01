@@ -1,5 +1,7 @@
 ## lines-async-iterator
 [![Build Status](https://travis-ci.org/rafaelkallis/lines-async-iterator.svg?branch=master)](https://travis-ci.org/rafaelkallis/lines-async-iterator)
+[![npm version](https://badge.fury.io/js/lines-async-iterator.svg)](https://badge.fury.io/js/lines-async-iterator)
+[![GitHub version](https://badge.fury.io/gh/rafaelkallis%2Flines-async-iterator.svg)](https://badge.fury.io/gh/rafaelkallis%2Flines-async-iterator)
 
 Line by line async iterator for `node.js`
 
