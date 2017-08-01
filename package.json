@@ -1,0 +1,44 @@
+{
+  "name": "lines-async-iterator",
+  "version": "0.1.0",
+  "description": "Asynchronous file lines iterator.",
+  "main": "lib/lines.js",
+  "typings": "lib/lines.d.ts",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib --ignore spec.js --copy-files",
+    "test": "node --harmony-async-iteration ./node_modules/.bin/jest -- --forceExit",
+    "lint": "eslint src/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelkallis/lines-async-iterator.git"
+  },
+  "keywords": [
+    "iterator",
+    "async",
+    "fs",
+    "file",
+    "open",
+    "lines"
+  ],
+  "author": "Rafael Kallis <rk@rafaelkallis.com> (http://rafaelkallis.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rafaelkallis/lines-async-iterator/issues"
+  },
+  "homepage": "https://github.com/rafaelkallis/lines-async-iterator#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-transform-async-generator-functions": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "bluebird": "^3.5.0",
+    "eslint": "^4.3.0",
+    "eslint-config-prettier": "^2.3.0",
+    "eslint-plugin-jest": "^20.0.3",
+    "eslint-plugin-prettier": "^2.1.2",
+    "jest": "^20.0.4",
+    "prettier": "^1.5.3"
+  }
+}
